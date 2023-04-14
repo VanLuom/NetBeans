@@ -17,12 +17,13 @@ public class EditServlet extends BaseServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+//     
         int productId = Integer.parseInt(request.getParameter("product_id"));
         ProductDao productDao = DatabaseDao.getInstance().getProductDao();
         Product product = productDao.find(productId);
         request.setAttribute("product", product);
         request.getRequestDispatcher("Edit.jsp").include(request, response);
-        response.sendRedirect("Edit.jsp");
+//      
     }
 
     /**
@@ -37,15 +38,19 @@ public class EditServlet extends BaseServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int productId = Integer.parseInt(request.getParameter("productId"));
+        int productId = Integer.parseInt(request.getParameter("product_id"));
         ProductDao productDao = DatabaseDao.getInstance().getProductDao();
         Product product = productDao.find(productId);
 
         String name = request.getParameter("name");
         String description = request.getParameter("description");
+        double price = Double.parseDouble(request.getParameter("price"));
+        int quantity = Integer.parseInt(request.getParameter("quantity"));
 
         product.setName(name);
         product.setDescription(description);
+        product.setPrice(price);
+        product.setQuantity(quantity);
 
         productDao.update(product);
         response.sendRedirect("HomeServlet");

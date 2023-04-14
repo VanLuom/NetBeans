@@ -17,6 +17,7 @@
     <body>
         <% List<Product> productList =(List<Product>)request.getAttribute("productList");%>
         <h2>ProductList</h2>
+        <a href="CreateServlet">Create</a>
         <table class="table">
             <thead>
                 <tr>
@@ -45,7 +46,7 @@
                             <!-- add any other form fields -->
                             <input type="submit" value="Delete">
                         </form></td>
-                    <td><a href="EditServlet?product_id=<%= product.getId() %>">Edit</a></td>
+                    <td><a href="EditServlet?product_id=<%= product.getId()%>">Edit</a></td>
 
                 </tr>
                 <% } %>
