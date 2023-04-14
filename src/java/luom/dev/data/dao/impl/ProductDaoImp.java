@@ -46,7 +46,7 @@ public class ProductDaoImp implements ProductDao {
     public boolean update(Product product) {
         // TODO Auto-generated method stub
         try {
-            String sql = "UPDATE PRODUCTS SET NAME=?, DESCRIPTION=?, PRICE=?, QUANTITY=?, VIEW=?, CATEGORY_ID=?, CREATED_AT=?";
+            String sql = "UPDATE PRODUCTS SET NAME=?, DESCRIPTION=?, PRICE=?, QUANTITY=?, VIEW=?, CATEGORY_ID=?, CREATED_AT=? WHERE ID=?";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, product.getName());
             stmt.setString(2, product.getDescription());
@@ -55,6 +55,7 @@ public class ProductDaoImp implements ProductDao {
             stmt.setInt(5, product.getView());
             stmt.setInt(6, product.getCategoryId());
             stmt.setTimestamp(7, product.getCreatedAt());
+            stmt.setInt(8, product.getId());
             return stmt.execute();
 
         } catch (SQLException e) {

@@ -47,9 +47,9 @@ public class CategoryDaoImp implements CategoryDao {
             stmt.setInt(4, category.getId());
 
             stmt.execute();
-        } catch (Exception e) {
-            // TODO: handle exception
-        	e.printStackTrace();
+        } catch (SQLException e) {
+                    // TODO: handle exception
+
         }
 		return false;
 	}

@@ -8,9 +8,13 @@
         <servlet-name>DeleteServlet</servlet-name>
         <servlet-class>luom.dev.DeleteServlet</servlet-class>
     </servlet>
-     <servlet>
+    <servlet>
         <servlet-name>EditServlet</servlet-name>
         <servlet-class>luom.dev.EditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateServlet</servlet-name>
+        <servlet-class>luom.dev.CreateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
@@ -28,8 +32,16 @@
         <servlet-name>homejsp</servlet-name>
         <jsp-file>/home.jsp</jsp-file>
     </servlet>
-     <servlet>
+    <servlet>
         <servlet-name>Editjsp</servlet-name>
         <jsp-file>/Edit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateServlet</servlet-name>
+        <url-pattern>/CreateServlet</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>Createjsp</servlet-name>
+        <jsp-file>/Create.jsp</jsp-file>
     </servlet>
 </web-app>
