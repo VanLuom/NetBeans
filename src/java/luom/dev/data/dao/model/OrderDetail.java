@@ -1,57 +1,76 @@
 package luom.dev.data.dao.model;
 
+import luom.dev.data.dao.DatabaseDao;
+
 public class OrderDetail {
-	private int id;
-	private int productId;
-	private int orderId;
-	private int quantity;
-	private double price;
-	
-	
-	public OrderDetail(int productId, int orderId, int quantity, double price) {
-		super();
-		this.productId = productId;
-		this.orderId = orderId;
-		this.quantity = quantity;
-		this.price = price;
-	}
-	public OrderDetail(int id, int productId, int orderId, int quantity, double price) {
-		super();
-		this.id = id;
-		this.productId = productId;
-		this.orderId = orderId;
-		this.quantity = quantity;
-		this.price = price;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public int getProductId() {
-		return productId;
-	}
-	public void setProductId(int productId) {
-		this.productId = productId;
-	}
-	public int getOrderId() {
-		return orderId;
-	}
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
-	}
-	public int getQuantity() {
-		return quantity;
-	}
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-	public double getPrice() {
-		return price;
-	}
-	public void setPrice(double price) {
-		this.price = price;
-	}
-	
+
+    public int id;
+    public int amount;
+    public int product_id;
+    public int order_id;
+    public double price;
+
+    public OrderDetail(int amount, int product_id, int order_id, double price) {
+        this.amount = amount;
+        this.product_id = product_id;
+        this.order_id = order_id;
+        this.price = price;
+    }
+
+    public OrderDetail(int id, int amount, int product_id, int order_id, double price) {
+        this.id = id;
+        this.amount = amount;
+        this.product_id = product_id;
+        this.order_id = order_id;
+        this.price = price;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getProduct_id() {
+        return product_id;
+    }
+
+    public void setProduct_id(int product_id) {
+        this.product_id = product_id;
+    }
+
+    public int getOrder_id() {
+        return order_id;
+    }
+
+    public void setOrder_id(int order_id) {
+        this.order_id = order_id;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Product getProduct() {
+        return DatabaseDao.getInstance().getProductDao().find(product_id);
+    }
+
+    public Order getOrder() {
+        return DatabaseDao.getInstance().getOrderDao().find(order_id);
+    }
+
 }

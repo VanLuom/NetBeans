@@ -3,8 +3,6 @@ package luom.dev.data.driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import luom.dev.data.dao.CategoryDao;
-import luom.dev.data.dao.ProductDao;
 
 public class MySQLDriver {
 	final String DB_URL = "jdbc:mysql://localhost:3306/shop";
@@ -33,12 +31,12 @@ public class MySQLDriver {
         return null;
     }
 
-    public ProductDao getProductDao() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public CategoryDao getCategoryDao() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+//    public ProductDao getProductDao() {
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+//    }
+//
+//    public CategoryDao getCategoryDao() {
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+//    }
 
 }

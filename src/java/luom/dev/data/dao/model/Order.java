@@ -1,47 +1,71 @@
 package luom.dev.data.dao.model;
 
+import luom.dev.data.dao.Database;
+
 public class Order {
-	private int id;
-	private String code;
-	private String status;
-	private int userId;
-	
-	public Order(String code, String status, int userId) {
-		super();
-		this.code = code;
-		this.status = status;
-		this.userId = userId;
-	}
-	public Order(int id, String code, String status, int userId) {
-		super();
-		this.id = id;
-		this.code = code;
-		this.status = status;
-		this.userId = userId;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getCode() {
-		return code;
-	}
-	public void setCode(String code) {
-		this.code = code;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public int getUserId() {
-		return userId;
-	}
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
-	
+
+    public int id;
+    public String code;
+    public String description;
+    public String status;
+    public int userId;
+
+    public Order(int id, String code, String description, String status, int userId) {
+        this.id = id;
+        this.code = code;
+        this.description = description;
+        this.status = status;
+        this.userId = userId;
+    }
+
+    public Order(String code, String description, String status, int userId) {
+        this.code = code;
+        this.description = description;
+        this.status = status;
+        this.userId = userId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public User getUser() {
+        return Database.getInstance().getUserDao().find(userId);
+    }
 }

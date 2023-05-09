@@ -1,24 +1,28 @@
 package luom.dev.data.dao.model;
 
 import java.sql.Timestamp;
+import luom.dev.data.dao.DatabaseDao;
 
 public class Product {
 
     private int id;
     private String name;
     private String description;
+    private String img;
     private double price;
     private int quantity;
     private int view;
     private int categoryId;
     private Timestamp createdAt;
 
-    public Product(int id, String name, String description, double price, int quantity, int view, int categoryId,
+    public Product(int id, String name, String description, String img, double price, int quantity, int view, int categoryId,
             Timestamp createdAt) {
         super();
         this.id = id;
         this.name = name;
         this.description = description;
+        this.img = img;
+
         this.price = price;
         this.quantity = quantity;
         this.view = view;
@@ -26,9 +30,10 @@ public class Product {
         this.createdAt = createdAt;
     }
 
-    public Product(String name, String description, String image, double price, int quantity, int view, int categoryId) {
+    public Product(String name, String description, String img, double price, int quantity, int view, int categoryId) {
         this.name = name;
         this.description = description;
+          this.img = img;
         this.price = price;
         this.quantity = quantity;
         this.view = view;
@@ -57,6 +62,13 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+     public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public double getPrice() {
@@ -97,6 +109,10 @@ public class Product {
 
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
+    }
+    
+    public Category getCategory(){
+        return DatabaseDao.getInstance().getCategoryDao().find(categoryId);
     }
 
 }

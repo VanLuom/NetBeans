@@ -10,4 +10,6 @@ public interface ProductDao {
 	public boolean delete (int id);
 	public Product find(int id);
 	public List<Product> findAll();
+        public List<Product> findByName(String name);
+        public List<Product> findbyCategory(int category_id);
 }

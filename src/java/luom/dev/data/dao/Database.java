@@ -4,6 +4,8 @@
  */
 package luom.dev.data.dao;
 import luom.dev.data.dao.impl.CategoryDaoImp;
+import luom.dev.data.dao.impl.OrderDaoImp;
+import luom.dev.data.dao.impl.OrderDetailDaoImp;
 import luom.dev.data.dao.impl.ProductDaoImp;
 import luom.dev.data.dao.impl.UserDaoImp;
 
@@ -25,6 +27,16 @@ public class Database extends DatabaseDao{
     @Override
     public CategoryDao getCategoryDao() {
         return new CategoryDaoImp();
+    }
+
+    @Override
+    public OrderDao getOrderDao() {
+        return new OrderDaoImp();
+    }
+
+    @Override
+    public OrderDetailDao getOrderDetailDao() {
+        return new OrderDetailDaoImp();
     }
 
 }

@@ -3,23 +3,39 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Product.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/DeleteCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orders/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orderDetail/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/LoginServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/create.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/inc/sidebar.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/CreateCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/BaseAdminServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Category.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/DashBoardServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/orderDetail/IndexOrderDetailServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/EditCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/edit.jsp</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/CategoryDaoImp.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Product.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/DatabaseDao.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/EditServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/BaseServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/OrderDetail.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/SearchServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Order.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/OrderDetailSession.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/user/IndexUserServlet.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/ProductDaoImp.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/CategoryDao.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/CreateServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/home.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/Database.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/Edit.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/Create.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/HomeServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/index.html</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/MainApp.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/DeleteServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/OrderDetailDaoImp.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/IndexProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/order/IndexOrderServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/EditProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/OrderDetailDao.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/driver/MySQLDriver.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/users/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/IndexCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/dashboard.jsp</file>
         </group>
     </open-files>
 </project-private>
