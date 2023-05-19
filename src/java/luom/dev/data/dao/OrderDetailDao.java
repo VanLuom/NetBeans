@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 package luom.dev.data.dao;
+
 import java.util.List;
 import luom.dev.data.dao.model.OrderDetail;
 
@@ -22,5 +23,5 @@ public interface OrderDetailDao {
 
     public List<OrderDetail> findALL();
 
-    public List<OrderDetail> findByOrder(int order_id);
+    public List<OrderDetail> findByOrder(int orderId);
 }

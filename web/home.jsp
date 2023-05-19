@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="row">
-                <c:forEach items="${categoryList}" var="category">
+                <c:forEach items="${categoryList}" var="category" begin="0" end="2">
                     <div class="col-12 col-md-4 p-5 mt-3">
                         <a href="CategoryServlet?category_id=${category.id}"><img src="${category.image}" class="rounded-circle img-fluid border"></a>
                         <h5 class="text-center mt-3 mb-3">${category.name}</h5>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <c:forEach items="${productList}" var="product">
+                    <c:forEach items="${productList}" var="product" begin="0" end="2">
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="ProductDetailServlet?product_id=${product.id}">

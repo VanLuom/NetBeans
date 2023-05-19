@@ -47,29 +47,25 @@
                                     <table class="table align-items-center mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">amount</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">product</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">order</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">price</th>
-
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">code</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">name</th>
                                                 <th class="text-secondary opacity-7"></th>
-
                                             </tr>
                                         </thead>
                                         <tbody>
-
-                                            <c:forEach items="${orderDetailList}" var="orderDetail">
+                                            <c:forEach items="${orderDetailList}" var="orderdetail">
                                                 <tr>
                                                     <td>
-                                                        <a href="OrderDetailServlet?orderId=${orderDetail.id}">${orderDetail.product.name}</a>
+                                                        ${orderdetail.order.code}
                                                     </td>
-                                                    <td>${orderDetail.amount}</td>
-                                                    <td>${orderDetail.order.code}</td>
-                                                    <td>${orderDetail.price}</td>
+                                                    <td>
+                                                        ${orderdetail.product.name}
+                                                    </td>
+                                                    
+                                                    <td>${orderdetail.price * orderdetail.quantity}</td>
 
                                                 </tr>
                                             </c:forEach>
-
                                         </tbody>
                                     </table>
                                 </div>

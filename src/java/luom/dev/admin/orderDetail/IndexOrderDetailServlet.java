@@ -23,12 +23,12 @@ public class IndexOrderDetailServlet extends BaseAdminServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int orderId = Integer.parseInt(request.getParameter("orderId"));
+        int orderId = Integer.parseInt(request.getParameter("order_id"));
         OrderDetailDao orderDetailDao = Database.getInstance().getOrderDetailDao();
         List<OrderDetail> orderDetailList = orderDetailDao.findByOrder(orderId);
-        
+
         request.setAttribute("orderDetailList", orderDetailList);
-        request.getRequestDispatcher("admin/orderDetail/index.jsp").include(request, response);
+        request.getRequestDispatcher("admin/orderDetail/show.jsp").include(request, response);
     }
 
     @Override

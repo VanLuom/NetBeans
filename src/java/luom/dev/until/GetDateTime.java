@@ -14,9 +14,11 @@ import java.util.List;
  * @author ACER
  */
 public class GetDateTime {
-     static DateTimeFormatter format = DateTimeFormatter
+
+    static DateTimeFormatter format = DateTimeFormatter
             .ofPattern("yyyy-MM-dd");
     public static LocalDateTime now = LocalDateTime.now();
+    private static int number;
 
     public static List<String> get7Date() {
         List<String> dateList = new ArrayList<String>();
@@ -25,5 +27,13 @@ public class GetDateTime {
         }
         return dateList;
     }
-    
+
+    public static List<String> getDates(int NUMBER_DAY) {
+        List<String> dateList = new ArrayList<String>();
+        for (int i = number - 1; i >= 0; i--) {
+            dateList.add(now.minusDays(i).format(format));
+        }
+        return dateList;
+    }
+
 }

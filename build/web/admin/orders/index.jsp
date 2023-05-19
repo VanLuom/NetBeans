@@ -47,8 +47,8 @@
                                     <table class="table align-items-center mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">code</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">description</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">id</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Code</th>
                                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">status</th>
                                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">user</th>
 
@@ -57,33 +57,35 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-
                                             <c:forEach items="${orderList}" var="order">
+                                                <c:set var="index" value="${index + 1 }"/>
                                                 <tr>
+                                                    <td>${index}</td>
                                                     <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <p class="text-xs font-weight-bold mb-0">${order.code}</p>
-                                                        </div>
+                                                        <a href="IndexOrderDetailServlet?order_id=${order.id}">${order.code}</a>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <p class="text-xs font-weight-bold mb-0">${order.description}</p>
-                                                        </div>
+                                                        <form action="EditOrderServlet" method="post">
+                                                            <input type="hidden" name="order_id" value="${order.id}">
+                                                            <div class="form-group">
+                                                                <select name="status" class="form-control" onchange="this.form.submit()">
+                                                                    <c:if test="${order.status == 'pending'}">
+                                                                        <option selected value="pending">Pending</option>
+                                                                        <option value="finish" >Finish</option>
+                                                                    </c:if>
+                                                                    <c:if test="${order.status == 'finish'}">
+                                                                        <option value="pending">Pending</option>
+                                                                        <option selected value="finish" >Finish</option>
+                                                                    </c:if>
+                                                                </select>
+                                                            </div>
+                                                        </form>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <p class="text-xs font-weight-bold mb-0">${order.status}</p>
-                                                        </div>
+                                                        ${order.user.name}
                                                     </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <p class="text-xs font-weight-bold mb-0">${order.user.name}</p>
-                                                        </div>
-                                                    </td>
-
                                                 </tr>
                                             </c:forEach>
-
                                         </tbody>
                                     </table>
                                 </div>

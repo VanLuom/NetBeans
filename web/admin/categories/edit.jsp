@@ -41,25 +41,24 @@
                     <div class="col-12">
                         <main>
                             <div class="container-fluid px-4">
-                                <h1 class="mt-4">category</h1>
+                                <h1 class="mt-4">Product</h1>
 
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-table me-1"></i>
-                                        Edit category
+                                        Edit Category
                                     </div>
                                     <div class="card-body">
-                                        <form action="EditCategoryServlet" method="post">
+                                        <form action="EditCategoryServlet" method="post" enctype="multipart/form-data">
                                             <input type="hidden" name="category_id" value="${category.id}"/>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Name</label>
                                                 <input type="text" name="name" value="${category.name}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
-
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Image</label>
-                                                <input type="text" name="img" value="${category.image}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter image">
-
+                                                <input type="file" name="image" value="" class="form-control" id="imgInput" aria-describedby="emailHelp" placeholder="Enter image">
+                                                <img id="imgPreview" src="${category.image}" alt="${category.name}" style="height: 150px">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">Description</label>
@@ -76,9 +75,21 @@
             </div>
             <%@include file="../inc/footer.jsp" %>
         </main>
+        <script>
+            const imgInput = document.getElementById('imgInput');
+            const imgPreview = document.getElementById('imgPreview');
 
-
-
+            imgInput.addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.addEventListener('load', function () {
+                        imgPreview.src = reader.result;
+                    });
+                    reader.readAsDataURL(file);
+                }
+            });
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="./public/admin/js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

@@ -4,18 +4,13 @@
  */
 package luom.dev.data.dao.impl;
 
-import java.sql.Timestamp;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import luom.dev.data.dao.OrderDao;
 import luom.dev.data.dao.OrderDetailDao;
-import luom.dev.data.dao.model.Order;
 import luom.dev.data.dao.model.OrderDetail;
 import luom.dev.data.driver.MySQLDriver;
 

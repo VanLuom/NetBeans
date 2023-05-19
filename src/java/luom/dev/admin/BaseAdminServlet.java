@@ -45,4 +45,9 @@ public class BaseAdminServlet extends HttpServlet {
         checkLogin(req, resp);
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        checkLogin(req, resp);
+    }
+
 }

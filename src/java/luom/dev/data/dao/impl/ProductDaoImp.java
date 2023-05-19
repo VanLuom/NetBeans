@@ -11,6 +11,8 @@ import java.util.List;
 import luom.dev.data.dao.ProductDao;
 import luom.dev.data.dao.model.Product;
 import luom.dev.data.driver.MySQLDriver;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ProductDaoImp implements ProductDao {
 
@@ -193,5 +195,21 @@ public class ProductDaoImp implements ProductDao {
         }
 
         return productList;
+    }
+
+    @Override
+    public int countProduct() {
+        String sql = "SELECT COUNT(*) AS count FROM products";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countProduct = rs.getInt("count");
+                return countProduct;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
     }
 }

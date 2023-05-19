@@ -182,7 +182,7 @@
                                             <td class="column-4">
                                                 <div class="quawrap-num-product flex-w m-l-auto m-r-0">
                                                     <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-                                                       <form action="CartServlet" method="post" class="quantity-item">
+                                                        <form action="CartServlet" method="post" class="quantity-item">
                                                             <input type="hidden" name="product_id" value="${OrderDetailSession.productId}"/>
                                                             <input type="hidden" name="action" value="update"/>
                                                             <input type="hidden" name="quantity" value="1"/>
@@ -320,7 +320,6 @@
                 </div>
             </div>
         </form>
-        --===============================================================================================-->	
         <script src="./public/vendor/jquery/jquery-3.2.1.min.js"></script>
         <!--===============================================================================================-->
         <script src="./public/vendor/animsition/js/animsition.min.js"></script>

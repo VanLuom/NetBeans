@@ -76,7 +76,7 @@
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">${sessionScope.user.name}</button>
                     </c:if>
                     <c:if test="${sessionScope.user.role == 'admin'}">
-                        <button type="button" class="btn-sm btn-light"><a class="" href="DashBoardServlet">admin</a></button></button>
+                      <a class="" href="DashBoardServlet">admin</a>
                     </c:if>
                     <c:if test="${sessionScope.user != null}">
                         <a href="LogoutServlet">Logout</a>

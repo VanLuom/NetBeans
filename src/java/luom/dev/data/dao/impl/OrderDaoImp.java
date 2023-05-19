@@ -175,4 +175,92 @@ public class OrderDaoImp implements OrderDao {
         }
         return count;
     }
+
+    @Override
+    public int countOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders";
+        try {
+            Connection conn = MySQLDriver.getInstance().getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countOrder = rs.getInt("count");
+                return countOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countPendingOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'PENDING'";
+        try {
+            Connection conn = MySQLDriver.getInstance().getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countPendingOrder = rs.getInt("count");
+                return countPendingOrder;
+
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countShippingOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'SHIPPING'";
+        try {
+            Connection conn = MySQLDriver.getInstance().getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countShippingOrder = rs.getInt("count");
+                return countShippingOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countDeliveredOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'DELIVERED'";
+        try {
+            Connection conn = MySQLDriver.getInstance().getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countDeliveredOrder = rs.getInt("count");
+                return countDeliveredOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countCanceledOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'CANCELED'";
+        try {
+            Connection conn = MySQLDriver.getInstance().getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countDeliveredOrder = rs.getInt("count");
+                return countDeliveredOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
 }
+
+

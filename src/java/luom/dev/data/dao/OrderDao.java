@@ -29,4 +29,14 @@ public interface OrderDao {
 
     public int countOrderByDay(String date);
 
+    public int countOrder();
+
+    public int countPendingOrder();
+
+    public int countShippingOrder();
+
+    public int countDeliveredOrder();
+
+    public int countCanceledOrder();
+
 }
