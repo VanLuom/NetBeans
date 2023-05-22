@@ -3,35 +3,54 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/CheckOutServlet.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/public/admin/assets/demo/datatables-demo.js</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orders/index.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/public/admin/assets/demo/chart-bar-demo.js</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/productDetail.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/BaseAdminServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orderDetail/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/create.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/inc/sidebar.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/CreateCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Category.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/DashBoardServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/category.jsp</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/cart.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/create.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/orderDetail/IndexOrderDetailServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/HomeServlet.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/CreateProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/CategoryDaoImp.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/OrderDao.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/inc/header.jsp</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/edit.jsp</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/until/Constants.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/OrderDetail.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/User.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/Order.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orderDetail/show.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/EditProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/orderDetail/IndexOrderdetailServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/search.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/index.html</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/public/admin/assets/demo/chart-pie-demo.js</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/OrderDaoImp.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/CheckOutServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/orders/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/public/admin/assets/demo/chart-bar-demo.js</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/CartServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/orderDetail/ShowOrderDetailServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/productDetail.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/BaseAdminServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/category.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/create.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/HomeServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/index.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/inc/navbar.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/category/EditCategoryServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/categories/edit.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/CreateProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/inc/header.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/products/edit.jsp</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/OrderDetail.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/SearchServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/model/OrderDetailSession.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/ProductDaoImp.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/OrderDetailDaoImp.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/EditProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/product/IndexProductServlet.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/admin/order/IndexOrderServlet.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/until/Flash.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/home.jsp</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/OrderDetailDao.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/index.html</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/public/admin/assets/demo/chart-pie-demo.js</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/data/dao/impl/OrderDaoImp.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/web/admin/dashboard.jsp</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Helloword/src/java/luom/dev/CategoryServlet.java</file>
         </group>

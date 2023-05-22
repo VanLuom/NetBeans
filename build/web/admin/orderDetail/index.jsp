@@ -47,11 +47,10 @@
                                     <table class="table align-items-center mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ProductID</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">OrderID</th>
                                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Amount</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Order</th>
                                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Total</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -60,12 +59,12 @@
                                                 <c:set var="index" value="${index + 1}"/>
                                                 <tr>
                                                     <td>
-                                                        <a href="ProductServlet?product_id=${orderDetail.id}">${orderDetail.product.name}</a>
+                                                        <a href="OrderDetailServlet?order_id=${orderDetail.id}">${orderDetail.product.name}</a>
                                                     </td>
+                                                    <td>${orderDetail.order.id}</td>
+
                                                     <td>${orderDetail.amount}</td>
-                                                    <td>${orderDetail.order.code}</td>
                                                     <td>${orderDetail.price}</td>
-                                                    <td>${orderDetail.price * orderDetail.amount}</td>
                                                 </tr>
                                             </c:forEach>
                                         </tbody>

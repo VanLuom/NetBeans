@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+        <a class="navbar-brand text-success logo h1 align-self-center" href="HomeServlet">
             Zay
         </a>
 
@@ -66,14 +66,14 @@
                 </a>
                 <div class="col-lg-6 text-center text-lg-right">
                     <c:if test="${sessionScope.user == null}">
-                        <button class="dropdown-item" type="button"> <a class="" href="LoginServlet">login</a></button>
-                        <button class="dropdown-item" type="button"> <a class="" href="RegisterServlet">Register</a></button>
+                         <a class="" href="LoginServlet">login</a>
+                         <a class="" href="RegisterServlet">Register</a>
                     </c:if>
                     <i class="">
                         <c:if test="${sessionScope.user == null}"></c:if>
                     </i>
                     <c:if test="${sessionScope.user != null}">
-                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">${sessionScope.user.name}</button>
+                        ${sessionScope.user.name}
                     </c:if>
                     <c:if test="${sessionScope.user.role == 'admin'}">
                       <a class="" href="DashBoardServlet">admin</a>

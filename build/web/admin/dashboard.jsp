@@ -16,6 +16,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
         <!-- CSS Files -->
         <link id="pagestyle" href="./public/admin/assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+        <link rel="apple-touch-icon" href="./assets/img/apple-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
     </head>
     <body class="g-sidenav-show  bg-gray-100">
         <%@include file="./inc/sidebar.jsp" %>
@@ -167,8 +169,12 @@
             </div>
             <%@include file="inc/footer.jsp" %>
         </main>
+        <script src="./public/admin/assets/js/core/popper.min.js"></script>
+        <script src="./public/admin/assets/js/core/bootstrap.min.js"></script>
+        <script src="./public/admin/assets/js/plugins/perfect-scrollbar.min.js"></script>
+        <script src="./public/admin/assets/js/plugins/smooth-scrollbar.min.js"></script>
+        <script src="./public/admin/assets/js/plugins/chartjs.min.js"></script>
         <script>
-
             var ctx = document.getElementById("chart-bars").getContext("2d");
             new Chart(ctx, {
             type: "bar",
@@ -180,7 +186,7 @@
                                     borderWidth: 0,
                                     borderRadius: 4,
                                     borderSkipped: false,
-                                    backgroundColor: "rgba(253, 255, 255, .8)",
+                                    backgroundColor: "rgba(223, 215, 255, .8)",
                                     data: [${countPendingOrder}, ${countShippingOrder}, ${countDeliveredOrder}, ${countCanceledOrder}],
                                     maxBarThickness: 6
                             }, ],
@@ -205,7 +211,7 @@
                                     drawOnChartArea: true,
                                     drawTicks: false,
                                     borderDash: [5, 5],
-                                    color: 'rgba(255, 255, 255, .2)'
+                                    color: 'rgba(235, 225, 255, .2)'
                             },
                                     ticks: {
                                     suggestedMin: 0,
@@ -261,15 +267,14 @@
                                     pointRadius: 5,
                                     pointBackgroundColor: "rgba(255, 255, 255, .8)",
                                     pointBorderColor: "transparent",
-                                    borderColor: "rgba(255, 255, 255, .8)",
-                                    borderColor: "rgba(255, 255, 255, .8)",
+                                    borderColor: "rgba(255, 225, 215, .8)",
+                                    borderColor: "rgba(235, 254, 225, .8)",
                                     borderWidth: 4,
                                     backgroundColor: "transparent",
                                     fill: true,
                                     data: [<c:forEach items="${countEachDay}" var="count">
                 ${count},</c:forEach>],
                                     maxBarThickness: 6
-
                             }],
                     },
                     options: {

@@ -43,7 +43,7 @@ public class DashBoardServlet extends BaseAdminServlet {
         int countCanceledOrder = orderDao.countCanceledOrder();
 
         List<String> dateList = GetDateTime.get7Date();
-        List<Integer> countEachDay = new ArrayList<>();
+         List<Integer> countEachDay = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
             countEachDay.add(orderDao.countOrderByDay(dateList.get(i)));
         }

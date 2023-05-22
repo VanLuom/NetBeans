@@ -1,7 +1,7 @@
-    <%-- 
-    Document   : create
-    Created on : May 7, 2023, 9:38:42 PM
-    Author     : ACER
+<%-- 
+Document   : create
+Created on : May 7, 2023, 9:38:42 PM
+Author     : ACER
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -31,6 +31,8 @@
         <!-- Nepcha Analytics (nepcha.com) -->
         <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
         <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+        <link rel="apple-touch-icon" href="./assets/img/apple-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
     </head>
     <body class="g-sidenav-show  bg-gray-100">
         <%@include file="../inc/sidebar.jsp" %>

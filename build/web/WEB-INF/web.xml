@@ -102,7 +102,11 @@
     </servlet>
     <servlet>
         <servlet-name>IndexOrderDetailServlet</servlet-name>
-        <servlet-class>luom.dev.admin.orderDetail.IndexOrderDetailServlet</servlet-class>
+        <servlet-class>luom.dev.admin.orderDetail.ShowOrderDetailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IndexOrderdetailServlet</servlet-name>
+        <servlet-class>luom.dev.admin.orderDetail.IndexOrderdetailServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
@@ -207,5 +211,9 @@
     <servlet-mapping>
         <servlet-name>IndexOrderDetailServlet</servlet-name>
         <url-pattern>/IndexOrderDetailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndexOrderdetailServlet</servlet-name>
+        <url-pattern>/IndexOrderdetailServlet</url-pattern>
     </servlet-mapping>
 </web-app>

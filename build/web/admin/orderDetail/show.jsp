@@ -47,23 +47,25 @@
                                     <table class="table align-items-center mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">code</th>
-                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">name</th>
-                                                <th class="text-secondary opacity-7"></th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Amount</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Order</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price</th>
+                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Total</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <c:forEach items="${orderDetailList}" var="orderdetail">
+                                            <c:set var="index" value="0"/>
+                                            <c:forEach items="${orderDetailList}" var="orderDetail">
+                                                <c:set var="index" value="${index + 1}"/>
                                                 <tr>
                                                     <td>
-                                                        ${orderdetail.order.code}
+                                                        <a href="ProductServlet?product_id=${orderDetail.id}">${orderDetail.product.name}</a>
                                                     </td>
-                                                    <td>
-                                                        ${orderdetail.product.name}
-                                                    </td>
-                                                    
-                                                    <td>${orderdetail.price * orderdetail.quantity}</td>
-
+                                                    <td>${orderDetail.amount}</td>
+                                                    <td>${orderDetail.order.code}</td>
+                                                    <td>${orderDetail.price}</td>
+                                                    <td>${orderDetail.price * orderDetail.amount}</td>
                                                 </tr>
                                             </c:forEach>
                                         </tbody>

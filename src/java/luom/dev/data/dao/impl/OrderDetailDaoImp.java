@@ -128,7 +128,7 @@ public class OrderDetailDaoImp implements OrderDetailDao {
                 int amount = rs.getInt("amount");
                 int productId = rs.getInt("product_id");
                 double price = rs.getDouble("price");
-                orderdetail.add(new OrderDetail(id, productId, orderId, amount, price));
+                orderdetail.add(new OrderDetail(amount, productId, orderId, price));
             }
         } catch (SQLException ex) {
         }

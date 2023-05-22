@@ -42,6 +42,7 @@ public class OrderDaoImp implements OrderDao {
             stmt.execute();
         } catch (Exception e) {
             // TODO: handle exception
+            Logger.getLogger("insert order").log(Level.SEVERE, e.toString());
         }
     }
 
@@ -195,7 +196,7 @@ public class OrderDaoImp implements OrderDao {
 
     @Override
     public int countPendingOrder() {
-        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'PENDING'";
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'pending'";
         try {
             Connection conn = MySQLDriver.getInstance().getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql);
@@ -262,5 +263,3 @@ public class OrderDaoImp implements OrderDao {
         return 0;
     }
 }
-
-
